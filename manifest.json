@@ -1,0 +1,22 @@
+{
+    "name": "myVariables",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "An Extension for developers✨ to keep track of their life's Variables⚡",
+    "action": {
+        "default_title": "myVariables",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./images/logo.png",
+            "32": "./images/logo.png",
+            "48": "./images/logo.png",
+            "128": "./images/logo.png"
+        }
+    },
+    "icons": {
+        "16": "./images/logo.png",
+        "32": "./images/logo.png",
+        "48": "./images/logo.png",
+        "128": "./images/logo.png"
+    }
+}

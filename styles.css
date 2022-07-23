@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    min-height: 100px;
+    background-color: #000000;
+    color: white;
+    border: 2px solid #000000;
+    border-left-color: #3AB4F2;
+    border-right-color: #ffdd00;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::selection {
+    color: #ffdd00;
+    background: #3ab5f2c0;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-div a {
+    height: 27.7px;
+    margin: 13.4px 10px 0 0;
+}
+
+.main-title {
+    display: inline;
+    padding: 0;
+    font-size: 20px;
+    margin: 10px 0 20px 10px;
+    color: #3AB4F2;
+    width: 140px;
+}
+
+.title-my {
+    color: #ffdd00;
+}
+
+.text-input {
+    display: inline-block;
+    width: 90px;
+    height: 25px;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#input-key {
+    border-color: #ffdd00;
+}
+
+#input-value {
+    border-color: #3AB4F2;
+}
+
+.text-input:focus {
+    outline: none;
+    border-width: 2px;
+}
+
+.sumbit-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    background-color: #1a1818;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0 10px;
+}
+
+td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+tr:nth-child(odd) {
+    border: 10px solid #000000;
+    background-color: #1a1818;
+}
+
+#ctxMenu {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    color: white;
+    border-radius: 8px;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: #3b3b3b66;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid #b5b5b5;
+}
+
+.menu-opt {
+    text-align: center;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#Update {
+    color: #4ec4de;
+}
+
+#Delete {
+    color: #e53737;
+}
+
+.menu-opt:hover {
+    background-color: #5a5f7347;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
