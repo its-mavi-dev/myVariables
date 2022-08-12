@@ -52,8 +52,8 @@ function renderVariables() {
                 event.preventDefault();
                 var ctxMenu = document.getElementById("ctxMenu");
                 ctxMenu.style.display = "block";
-                ctxMenu.style.left = event.pageX + "px";
-                ctxMenu.style.top = event.pageY + "px";
+                ctxMenu.style.left = (Math.abs(event.pageX - document.body.clientWidth) > ctxMenu.clientWidth) ? event.pageX + "px" : parseFloat(event.pageX - ctxMenu.clientWidth) + "px";
+                ctxMenu.style.top = (Math.abs(event.pageY - document.body.clientHeight) > ctxMenu.clientHeight) ? event.pageY + "px" : parseFloat(event.pageY - ctxMenu.clientHeight) + "px";
                 flag = e;
             },
             false
