@@ -6,8 +6,8 @@ const variableElement = document.getElementById("input-key"),
     deleteElement = document.getElementById("Delete");
 
 let variables = {
-        data: []
-    },
+    data: []
+},
     flag = null;
 
 submitElement.addEventListener("click", () => {
@@ -15,8 +15,8 @@ submitElement.addEventListener("click", () => {
 });
 
 document.addEventListener("keypress", (event) => {
- if (event.key === "Enter") 
-    addNewVars();
+    if (event.key === "Enter")
+        addNewVars();
 });
 
 renderVariables();
