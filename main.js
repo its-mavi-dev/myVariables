@@ -11,6 +11,17 @@ let variables = {
     flag = null;
 
 submitElement.addEventListener("click", () => {
+    addNewVars();
+});
+
+document.addEventListener("keypress", (event) => {
+ if (event.key === "Enter") 
+    addNewVars();
+});
+
+renderVariables();
+
+function addNewVars() {
     if (localStorage.getItem("Variables"))
         variables = JSON.parse(localStorage.getItem("Variables"));
 
@@ -30,9 +41,7 @@ submitElement.addEventListener("click", () => {
         localStorage.setItem("currValue", "");
         renderVariables();
     }
-});
-
-renderVariables();
+}
 
 function renderVariables() {
     if (localStorage.getItem("Variables"))
