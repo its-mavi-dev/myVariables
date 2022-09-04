@@ -10,13 +10,19 @@ let variables = {
 },
     flag = null;
 
+variableElement.focus();
+
 submitElement.addEventListener("click", () => {
     addNewVars();
 });
 
 document.addEventListener("keypress", (event) => {
-    if (event.key === "Enter")
+    if (event.key === "Enter") {
+        if (variableElement.value !== "" && variableElement.value !== null)
+            valueElement.focus();
+
         addNewVars();
+    }
 });
 
 renderVariables();
@@ -39,6 +45,7 @@ function addNewVars() {
         valueElement.value = null;
         localStorage.setItem("currVariable", "");
         localStorage.setItem("currValue", "");
+        variableElement.focus();
         renderVariables();
     }
 }
