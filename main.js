@@ -87,7 +87,9 @@ updateElement.addEventListener(
         localStorage.setItem("Variables", JSON.stringify(variables));
         localStorage.setItem("currVariable", variableElement.value);
         localStorage.setItem("currValue", valueElement.value);
-
+        valueElement.focus();
+        valueElement.select();
+        
         renderVariables();
     });
 
